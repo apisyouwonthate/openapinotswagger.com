@@ -5,9 +5,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-        title="Nextjs + MDX + Tailwind starter pack"
-        description="This is an opinionated way to handle MDX from multiple sources in a Next project with some help styling from ChakraUI"
-        url="www.whatever.com"
+        title="OpenAPI, not Swagger"
+        description="Helping the API-building community one link at a time by explaining the importance of OpenAPI vs Swagger nomenclature"
+        url="openapinotswagger.com"
         ogImage={{
           url: 'www.whatever.com',
           title: 'OG Image title',
@@ -16,8 +16,8 @@ export default function App({ Component, pageProps }) {
           siteName: 'Your site name',
         }}
         twitter={{
-          handle: '@domitriusclark',
-          site: 'https://twitter.com/domitriusclark',
+          handle: '@apisyouwonthate',
+          site: 'https://twitter.com/apisyouwonthate',
         }}
       />
       <Component {...pageProps} />;
