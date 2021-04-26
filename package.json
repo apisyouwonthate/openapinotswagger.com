@@ -3,7 +3,7 @@
   "starter-name": "mdnext-tailwind",
   "description": "MDNEXT template with Tailwind CSS",
   "version": "1.0.1",
-  "repository": "https://github.com/domitriusclark/mdnext-tailwind.git",
+  "repository": "https://github.com/apisyouwonthate/openapinotswagger.git",
   "author": "Eka @ekafyi",
   "main": "next.config.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "fast-glob": "^3.2.4",
+    "fathom-client": "^3.0.0",
     "fuse.js": "^6.4.1",
     "gray-matter": "^4.0.2",
     "next": "^10.0.5",

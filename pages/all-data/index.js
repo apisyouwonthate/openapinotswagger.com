@@ -2,7 +2,7 @@ import glob from 'fast-glob';
 import fs from 'fs';
 import matter from 'gray-matter';
 import ContentBox from '@components/ContentBox';
-import { contentGlob, getFileSlug } from '../data/[...slug]';
+import { contentGlob, getFileSlug } from '../[...slug]';
 
 export default function AllData({ allMdx }) {
   return (

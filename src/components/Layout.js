@@ -1,12 +1,16 @@
 import Navbar from '@components/Navbar';
 import SEO from '@components/SEO';
+import Footer from '@components/Footer';
 
-export function Layout({ props, children }) {
+export default function Layout({ props, children }) {
   return (
     <>
       <SEO {...props} />
-      <Navbar />
-      <div style={{ maxWidth: '32rem' }}>{children}</div>
+      <div style={{ maxWidth: '65ch', margin: '0 auto' }}>
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 }

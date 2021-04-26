@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   // Purge unused Tailwind styles in production to keep build CSS file small.
   purge: ['./**/*.{js,jsx,ts,tsx,mdx}'],
@@ -6,6 +8,7 @@ module.exports = {
       // See: https://tailwindcss.com/docs/customizing-colors#extending-the-default-palette
       colors: {
         'my-custom-color': 'rebeccapurple',
+        primary: colors.violet,
       },
     },
   },

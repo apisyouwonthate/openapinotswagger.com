@@ -2,16 +2,10 @@
 @tailwind components;
 
 /* Write your own custom component styles here */
-.tomato-box {
-  border: 4px dotted tomato;
-  border-radius: 4px;
-  transition: all 0.5s;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 900;
 }
-.mdnext-nav__item {
-  @apply p-2 font-bold text-gray-700;
-}
-.mdnext-nav__item:hover {
-  @apply text-my-custom-color underline;
-}
+
 
 @tailwind utilities;

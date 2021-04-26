@@ -1,13 +1,10 @@
 export default function Index() {
   return (
     <div>
-      <h1 className="tomato-box text-center p-4">
-        Welcome to MDNEXT + Tailwind
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl leading-none font-extrabold  tracking-tight mb-8">
+        It's called <em>OpenAPI</em>, not <strike>Swagger</strike>
       </h1>
-      <p className="text-my-custom-color mt-4">
-        This paragraph uses a custom CSS color class defined in{' '}
-        <code>tailwind.config.js</code>.
-      </p>
+      <p className="mt-4"></p>
     </div>
   );
 }
