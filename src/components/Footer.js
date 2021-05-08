@@ -12,7 +12,7 @@ export default function Footer() {
       >
         APIs You Won't Hate
       </a>
-      <span>.</span>
+      <span>, &copy; 2021</span>
     </footer>
   );
 }
