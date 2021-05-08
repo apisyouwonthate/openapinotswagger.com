@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import renderToString from 'next-mdx-remote/render-to-string';
-import hydrate from 'next-mdx-remote/hydrate';
+import { serialize } from 'next-mdx-remote/serialize';
+import { MDXRemote } from 'next-mdx-remote';
 import matter from 'gray-matter';
 import glob from 'fast-glob';
 
@@ -10,12 +10,10 @@ import Code from '@components/Code';
 const components = { code: Code };
 
 export default function Data({ mdxSource, frontMatter }) {
-  const content = hydrate(mdxSource, { components });
-
   return (
     <div>
       <h1>{frontMatter.title}</h1>
-      {content}
+      <MDXRemote {...source} components={components} />
     </div>
   );
 }
@@ -59,7 +57,7 @@ export async function getStaticProps({ params: { slug } }) {
   const mdxSource = await fs.readFile(fullPath);
   const { content, data } = matter(mdxSource);
 
-  const mdx = await renderToString(content, { components, scope: data });
+  const mdx = await serialize(content, { components, scope: data });
 
   return {
     props: {
