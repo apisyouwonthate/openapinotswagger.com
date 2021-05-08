@@ -13,7 +13,7 @@ export default function Data({ mdxSource, frontMatter }) {
   return (
     <div>
       <h1>{frontMatter.title}</h1>
-      <MDXRemote {...source} components={components} />
+      <MDXRemote {...mdxSource} components={components} />
     </div>
   );
 }
